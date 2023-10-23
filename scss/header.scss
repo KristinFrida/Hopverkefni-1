@@ -16,6 +16,10 @@ header {
     white-space: nowrap; /* Ensures content doesn't wrap to next line */
 }
 
+header h1 {
+display: block;
+}
+
 nav a {
     margin: 0 10px;
     color: white;
