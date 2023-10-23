@@ -98,6 +98,7 @@
     "resp-modifier": "^6.0.2",
     "rx": "^4.1.0",
     "safer-buffer": "^2.1.2",
+    "sass": "^1.69.4",
     "send": "^0.16.2",
     "serve-index": "^1.9.1",
     "serve-static": "^1.13.2",
@@ -131,7 +132,14 @@
     "browser-sync": "^2.29.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "browser-sync": "browser-sync start --server --files index.html styles.css",
+    "sass": "sass styles.scss styles.css",
+    "sass-watch": "sass --watch *.scss styles.css",
+    "dev": "concurrently npm:sass-watch npm:browser-sync",
+    "lint": "stylelint styles.scss ./**/*.scss",
+    "copy:html": "cpy ./*.html ./build/",
+    "copy:js": "cpy ./*.js ./build/",
+    "build": "concurrently npm:copy:*"
   },
   "repository": {
     "type": "git",
