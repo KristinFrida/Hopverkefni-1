@@ -98,7 +98,6 @@
     "resp-modifier": "^6.0.2",
     "rx": "^4.1.0",
     "safer-buffer": "^2.1.2",
-    "sass": "^1.69.4",
     "send": "^0.16.2",
     "serve-index": "^1.9.1",
     "serve-static": "^1.13.2",
@@ -129,7 +128,8 @@
     "yargs-parser": "^21.1.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.29.3"
+    "browser-sync": "^2.29.3",
+    "sass": "^1.69.4"
   },
   "scripts": {
     "browser-sync": "browser-sync start --server --files index.html styles.css",
