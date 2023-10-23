@@ -1,0 +1,55 @@
+/* Navigation Styles */
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation li {
+    margin: 0;
+    padding: 0;
+}
+/* Title Style */
+.title {
+    color: var(--color-dark-brown);
+    font-weight: bold;
+}
+
+/* Search Bar and Button Styles */
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+/* Navigation Links */
+.navigation-link {
+    color: var(--color-dark-brown);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Shopping Cart Button */
+.shopping-cart-button {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--color-dark-brown);
+}
+
+/* Shopping Cart Icon */
+.shopping-cart-icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+}
+
+/* Cog Wheel Icon */
+.Tannhjol-icon {
+    width: 25px;
+    height: 25px;
+    /* Add any other styles you want, such as color, margin, etc. */
+}
