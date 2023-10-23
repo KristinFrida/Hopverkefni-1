@@ -39,8 +39,6 @@ html {
   --font-family-heading: "Lota", Georgia, serif;
   --transition-time-short: 300ms;
   --transition-timing-function: ease-in-out;
-  --color-gold-light: #your-gold-color;
-  --color-dark: #your-dark-color;
   --color-white: #ffffff;
   --color-lightest-brown: #E1CEC2;
   --color-medium-brown: #6F4E37;
@@ -351,36 +349,26 @@ body, html {
 }
 
 header {
-  color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  display: block;
+  background: url("/myndir/Backround mynd.jpeg") center/cover no-repeat;
   text-align: center;
-  white-space: nowrap; /* Ensures content doesn't wrap to next line */
-  background-image: url("/myndir/Backround mynd.jpeg"); /* Path to your image */
-  background-size: cover; /* Adjust as needed */
-  background-position: center center; /* Adjust as needed */
-  background-repeat: no-repeat;
+  color: white;
 }
 
 header h1 {
-  display: block;
-  text-align: center;
-  font-size: 160px;
+  font-size: 36px; /* Adjust the font size as needed */
   font-weight: 700;
-  line-height: 192px;
-  justify-content: space-around;
+  line-height: 48px;
 }
 
 header p {
-  text-align: center;
-  display: block;
-  font-size: 36px;
+  font-size: 18px; /* Adjust the font size as needed */
   font-weight: 400;
-  line-height: 48px;
+  line-height: 24px;
 }
 
 nav a {
@@ -388,11 +376,29 @@ nav a {
   color: white;
   text-decoration: none;
   transition: color 0.3s;
-  display: block;
 }
 
 nav a:hover {
   color: #ffdd57;
+}
+
+.modur {
+  display: flex;
+  align-items: center;
+}
+
+.modur-mynd {
+  width: 50%; /* Adjust the width as needed */
+  margin-right: 20px; /* Add some spacing between the image and text */
+}
+
+.modur-texti {
+  flex: 1; /* Let the text div take up the remaining available space */
+  text-align: left; /* Align text to the left */
+}
+
+.verd {
+  display: flex;
 }
 
 /*# sourceMappingURL=styles.css.map */
