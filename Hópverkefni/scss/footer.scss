@@ -1,0 +1,62 @@
+/* Footer Styles */
+footer {
+    color: var(--color-white);
+    background-color: var(--color-dark-brown);
+}
+
+.footer h2 {
+    margin: 0.5rem;
+    border-bottom: var(--border-small) solid var(--color-white);
+}
+
+.footer p {
+    text-align: left;
+    list-style: none;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .content {
+    display: grid;
+    gap: var(--gutter);
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (min-width: 500px) {
+    .footer .content {
+        grid-template-columns: repeat(var(--columns), 1fr);
+        max-width: var(--max-width);
+    }
+
+    .footer section {
+        grid-column-end: span 4;
+    }
+
+    .footer section:first-child {
+        grid-column-start: 3;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.layout-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.trade p {
+    text-align: center;
+}
+
+section {
+    flex: 1;
+    padding: var(--spacing);
+}
