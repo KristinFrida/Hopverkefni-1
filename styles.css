@@ -312,6 +312,7 @@ img {
   }
   .main.boxes.box {
     width: 30%;
+    max-width: 30%;
   }
 }
 /* Button Styles */
