@@ -296,6 +296,24 @@ img {
   max-width: 100%;
 }
 
+.main.boxes {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main.boxes.box {
+  width: 40%;
+}
+
+@media (min-width: 501px) {
+  .main.boxes {
+    flex-direction: row;
+  }
+  .main.boxes.box {
+    width: 30%;
+  }
+}
 /* Button Styles */
 .takki, .button {
   display: inline-block;
