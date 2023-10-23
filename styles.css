@@ -39,8 +39,6 @@ html {
   --font-family-heading: "Lota", Georgia, serif;
   --transition-time-short: 300ms;
   --transition-timing-function: ease-in-out;
-  --color-gold-light: #your-gold-color;
-  --color-dark: #your-dark-color;
   --color-white: #ffffff;
   --color-lightest-brown: #E1CEC2;
   --color-medium-brown: #6F4E37;
@@ -350,7 +348,7 @@ body, html {
   font-family: Arial, sans-serif;
 }
 
-header {
+header.forsida {
   color: black;
   display: flex;
   justify-content: space-between;
@@ -364,9 +362,10 @@ header {
   background-size: cover; /* Adjust as needed */
   background-position: center center; /* Adjust as needed */
   background-repeat: no-repeat;
+  background-position: absolute;
 }
 
-header h1 {
+header.forsida h1 {
   display: block;
   text-align: center;
   font-size: 160px;
@@ -375,7 +374,7 @@ header h1 {
   justify-content: space-around;
 }
 
-header p {
+header.forsida p {
   text-align: center;
   display: block;
   font-size: 36px;
