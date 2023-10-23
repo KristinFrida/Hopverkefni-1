@@ -1,3 +1,4 @@
+DannaBranch2.0
 body, html {
     margin: 0;
     padding: 0;
@@ -50,4 +51,13 @@ nav a {
 
 nav a:hover {
     color: #ffdd57;
+
+header {
+    background-image: url('/myndir/virar.png'); /* Path to your image */
+    background-size: cover; /* Adjust as needed */
+    background-position: center center; /* Adjust as needed */
+    background-repeat: no-repeat;
+    text-align: center; /* Center the text horizontally */
+    color: white; /* Set text color for better contrast */
+
 }
