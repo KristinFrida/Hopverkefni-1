@@ -70,6 +70,10 @@ h1, h2, h3 {
 }
 
 /* Navigation Styles */
+.navigation {
+  z-index: 2;
+}
+
 .navigation ul {
   list-style: none;
   padding: 0;
@@ -313,6 +317,15 @@ img {
     background: linear-gradient(to top left, var(--color-dark-brown) 50%, var(--color-lightest-brown) 50%);
   }
 }
+body {
+  background-image: url("/myndir/Backround mynd.jpeg"); /* Path to your image */
+  height: 30rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-position: absolute;
+}
+
 .main .cards {
   display: block;
   justify-content: space-between;
