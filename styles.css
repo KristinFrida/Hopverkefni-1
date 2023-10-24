@@ -296,23 +296,40 @@ img {
   max-width: 100%;
 }
 
-.main.boxes {
+.main .cards {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
 }
 
-.main.boxes.box {
-  width: 40%;
+.card {
+  flex: 1;
+  padding: 1rem;
+}
+
+.card p {
+  flex: 2;
+  flex-grow: 1;
 }
 
 @media (min-width: 501px) {
-  .main.boxes {
+  .main .cards {
+    display: flex;
     flex-direction: row;
+    align-items: stretch;
+    margin: 5rem;
   }
-  .main.boxes.box {
+  .card {
+    flex: 1;
+    padding: 1rem;
     width: 30%;
-    max-width: 30%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card p {
+    flex: 2;
+    line-height: 2;
+    flex-grow: 1;
   }
 }
 /* Button Styles */
