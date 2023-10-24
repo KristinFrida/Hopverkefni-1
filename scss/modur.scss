@@ -1,0 +1,16 @@
+.modur {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.modur-mynd {
+    flex: 1; 
+    max-width: 50%; 
+    margin-right: 20px; 
+}
+
+.modur-texti {
+    flex: 2; 
+    text-align: left; 
+}
