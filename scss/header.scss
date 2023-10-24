@@ -4,7 +4,7 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-header {
+.forsida {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,28 +12,17 @@ header {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     background: url('/myndir/Backround mynd.jpeg') center/cover no-repeat;
     text-align: center;
-    color: white;
+    color: black;
 }
 
-header h1 {
+.forsida h1 {
     font-size: 36px; /* Adjust the font size as needed */
     font-weight: 700;
     line-height: 48px;
 }
 
-header p {
+.forsida p {
     font-size: 18px; /* Adjust the font size as needed */
     font-weight: 400;
     line-height: 24px;
-}
-
-nav a {
-    margin: 0 10px;
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #ffdd57;
 }
