@@ -1,4 +1,3 @@
-
 /* Styles for "voruval" section */
 .voruval {
     background-color: var(--color-lightest-brown);
@@ -19,7 +18,8 @@
     margin: 20px;
 }
 
-.order-details, .order-summary {
+.order-details,
+.order-summary {
     background-color: var(--color-white);
     padding: 20px;
 }
@@ -28,7 +28,9 @@ label {
     font-weight: bold;
 }
 
-input[type="text"], input[type="email"], input[type="tel"] {
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -82,11 +84,12 @@ input[type="text"], input[type="email"], input[type="tel"] {
         grid-column: span 6;
     }
 }
+
 @media (min-width: 700px) {
     .voruval .boxes .box {
         grid-column: span 4;
+    }
 }
-
 
 @media (min-width: 1000px) {
     .voruval .boxes .box {
