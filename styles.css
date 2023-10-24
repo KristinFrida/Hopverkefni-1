@@ -131,6 +131,18 @@ p {
   /* Add any other styles you want, such as color, margin, etc. */
 }
 
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  display: block;
+}
+
+nav a:hover {
+  color: #ffdd57;
+}
+
 footer {
   color: var(--color-white);
   background-color: var(--color-dark-brown);
@@ -210,7 +222,8 @@ section {
   margin: 20px;
 }
 
-.order-details, .order-summary {
+.order-details,
+.order-summary {
   background-color: var(--color-white);
   padding: 20px;
 }
@@ -219,7 +232,9 @@ label {
   font-weight: bold;
 }
 
-input[type=text], input[type=email], input[type=tel] {
+input[type=text],
+input[type=email],
+input[type=tel] {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
@@ -272,6 +287,11 @@ input[type=text], input[type=email], input[type=tel] {
     grid-column: span 6;
   }
 }
+@media (min-width: 700px) {
+  .voruval .boxes .box {
+    grid-column: span 4;
+  }
+}
 @media (min-width: 1000px) {
   .voruval .boxes .box {
     grid-column: span 3;
@@ -302,7 +322,7 @@ img {
 }
 
 .main .cards {
-  display: flex;
+  display: block;
   justify-content: space-between;
   align-items: center;
 }
@@ -317,9 +337,14 @@ img {
   flex-grow: 1;
 }
 
+.card .takki {
+  align-items: center;
+}
+
 @media (min-width: 501px) {
   .main .cards {
     display: flex;
+    flex: 1;
     flex-direction: row;
     align-items: stretch;
     margin: 5rem;
@@ -335,6 +360,9 @@ img {
     flex: 2;
     line-height: 2;
     flex-grow: 1;
+  }
+  .card .takki {
+    flex: 0;
   }
 }
 /* Button Styles */
@@ -434,18 +462,6 @@ header.forsida p {
   font-size: 36px;
   font-weight: 400;
   line-height: 48px;
-}
-
-nav a {
-  margin: 0 10px;
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s;
-  display: block;
-}
-
-nav a:hover {
-  color: #ffdd57;
 }
 
 .modur {
