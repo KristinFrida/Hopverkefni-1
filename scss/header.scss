@@ -1,10 +1,13 @@
+
 body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
-.forsida {
+
+header.forsida {
+    color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,6 +15,45 @@ body, html {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     background: url('/myndir/Backround mynd.jpeg') center/cover no-repeat;
     text-align: center;
+    white-space: nowrap; /* Ensures content doesn't wrap to next line */
+    background-image: url('/myndir/Backround\ mynd.jpeg'); /* Path to your image */
+    background-size: cover; /* Adjust as needed */
+    background-position: center center; /* Adjust as needed */
+    background-repeat: no-repeat;
+    background-position: absolute;
+}
+
+header.forsida h1 {
+display: block;
+text-align: center;
+font-size: 160px;
+font-weight: 700;
+line-height: 192px;
+justify-content: space-around;
+}
+
+header.forsida p {
+    text-align: center;
+    display: block;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48px;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: block;
+    
+}
+
+nav a:hover {
+    color: #ffdd57;
+}
+
+=======
     color: black;
 }
 
