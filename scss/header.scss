@@ -5,7 +5,6 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-
 header.forsida {
     color: black;
     display: flex;
@@ -13,7 +12,7 @@ header.forsida {
     align-items: center;
     padding: 0 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    background: url('/myndir/Backround mynd.jpeg') center/cover no-repeat;
+    display: block;
     text-align: center;
     white-space: nowrap; /* Ensures content doesn't wrap to next line */
     background-image: url('/myndir/Backround\ mynd.jpeg'); /* Path to your image */
@@ -52,14 +51,4 @@ nav a {
 nav a:hover {
     color: #ffdd57;
 }
-.forsida h1 {
-    font-size: 36px; /* Adjust the font size as needed */
-    font-weight: 700;
-    line-height: 48px;
-}
 
-.forsida p {
-    font-size: 18px; /* Adjust the font size as needed */
-    font-weight: 400;
-    line-height: 24px;
-}
