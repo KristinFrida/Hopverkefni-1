@@ -320,25 +320,28 @@ img {
 body {
   background-image: url("/myndir/Backround mynd.jpeg"); /* Path to your image */
   height: 30rem;
-  background-size: cover;
+  background-size: height 50%, width 100%;
   background-position: center center;
   background-repeat: no-repeat;
   background-position: absolute;
+  z-index: 0;
 }
 
 .main .cards {
   display: block;
   justify-content: space-between;
   align-items: center;
+  background: none;
 }
 
 .card {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 1rem;
 }
 
 .card p {
-  flex: 2;
   flex-grow: 1;
 }
 
@@ -346,23 +349,21 @@ body {
   align-items: center;
 }
 
+.card img {
+  height: 100%;
+}
+
 @media (min-width: 501px) {
   .main .cards {
     display: flex;
-    flex: 1;
-    flex-direction: row;
-    align-items: stretch;
     margin: 5rem;
   }
   .card {
     flex: 1;
     padding: 1rem;
     width: 30%;
-    flex-direction: column;
-    justify-content: center;
   }
   .card p {
-    flex: 2;
     line-height: 2;
     flex-grow: 1;
   }
@@ -463,6 +464,7 @@ nav a {
   text-decoration: none;
   transition: color 0.3s;
   display: block;
+  z-index: -1;
 }
 
 nav a:hover {

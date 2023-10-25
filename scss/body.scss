@@ -1,8 +1,9 @@
 body {
     background-image: url('/myndir/Backround\ mynd.jpeg'); /* Path to your image */
     height: 30rem;
-    background-size: cover; 
+    background-size: height 50%, width 100%; 
     background-position: center center; 
     background-repeat: no-repeat;
     background-position: absolute;
+    z-index: 0;
 }
