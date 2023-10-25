@@ -465,40 +465,18 @@ nav a:hover {
   color: #ffdd57;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin: 20px;
-}
-
-.order-details, .order-summary {
-  background-color: var(--color-white);
-  padding: 20px;
-}
-
-label {
-  font-weight: bold;
-}
-
-input[type=text], input[type=email], input[type=tel] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: 1fr 1fr; /* Split the container into two equal columns */
+  gap: 20px; /* Add some spacing between the columns */
 }
 
-.grid-item {
-  display: flex;
-  flex-direction: column;
+.order-details {
+  /* Your styles for the "order-details" element */
+}
+
+.order-summary {
+  /* Your styles for the "order-summary" element */
 }
 
 .modur {
