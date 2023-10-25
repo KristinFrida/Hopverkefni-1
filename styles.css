@@ -476,6 +476,11 @@ nav a:hover {
   padding: 20px;
 }
 
+.grid-item {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
 label {
   font-weight: bold;
 }
