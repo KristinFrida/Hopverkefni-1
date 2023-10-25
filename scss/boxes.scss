@@ -1,8 +1,9 @@
 .main .cards {
-    display: block;  
+    display: grid;  
     justify-content: space-between;  
     align-items: center;  
     background: none;
+    gap: 1rem;
 }
 
 .card {
@@ -19,12 +20,14 @@
 }
 
 .card img {
-    height: 100%;
+    height: auto;
+    width: 100%;
 }
 
 @media (min-width: 501px) {
     .main .cards {
         display: flex;
+        display: grid;
         margin: 5rem;
     }
 
@@ -32,12 +35,16 @@
         flex: 1;
         padding: 1rem;
         width: 30%; 
+        display: grid;
+        grid-template-rows: 0, 1fr, 0;
     }
         .card p {
             line-height: 2;
             flex-grow: 1;
         }
             .card .takki {
+                justify-self: start;
+                margin-top: 1rem;
                 flex: 0;
             }
 }
