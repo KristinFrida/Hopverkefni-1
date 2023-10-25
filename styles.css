@@ -69,6 +69,11 @@ h1, h2, h3 {
   font-family: var(--font-family-heading);
 }
 
+p {
+  font-family: "Lota", Helvetica, Arial, sans-serif; /* Your desired font stack */
+  font-size: 16px;
+}
+
 /* Navigation Styles */
 .navigation {
   z-index: 2;
@@ -128,6 +133,18 @@ h1, h2, h3 {
   width: 25px;
   height: 25px;
   /* Add any other styles you want, such as color, margin, etc. */
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  display: block;
+}
+
+nav a:hover {
+  color: #ffdd57;
 }
 
 footer {
@@ -200,42 +217,6 @@ section {
 
 .voruval .box {
   flex: 0 1 calc(24% - var(--spacing));
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin: 20px;
-}
-
-.order-details, .order-summary {
-  background-color: var(--color-white);
-  padding: 20px;
-}
-
-label {
-  font-weight: bold;
-}
-
-input[type=text], input[type=email], input[type=tel] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.grid-item {
-  display: flex;
-  flex-direction: column;
 }
 
 /* Box Styles */
@@ -417,6 +398,19 @@ body {
   margin-right: 10px;
 }
 
+.hop-up {
+  display: flex;
+  align-items: center;
+}
+
+.hop-up p {
+  background-color: var(--color-lightest-brown);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0;
+  margin-right: 10px;
+}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -429,7 +423,7 @@ header.forsida {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   display: block;
   text-align: center;
   white-space: nowrap; /* Ensures content doesn't wrap to next line */
@@ -464,11 +458,67 @@ nav a {
   text-decoration: none;
   transition: color 0.3s;
   display: block;
+<<<<<<< HEAD
   z-index: 1;
+=======
+>>>>>>> 8032eb7157226a822dbacd16767c6fbbecd24459
 }
 
 nav a:hover {
   color: #ffdd57;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 20px;
+}
+
+.order-details, .order-summary {
+  background-color: var(--color-white);
+  padding: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type=text], input[type=email], input[type=tel] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.modur {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.modur-mynd {
+  flex: 1;
+  max-width: 50%;
+  margin-right: 20px;
+}
+
+.modur-texti {
+  flex: 2;
+  text-align: left;
 }
 
 /*# sourceMappingURL=styles.css.map */
