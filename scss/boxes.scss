@@ -1,7 +1,7 @@
 .main .cards {
-    display: block;  
-    justify-content: space-between;  
-    align-items: center;  
+    display: block;
+    justify-content: space-between;
+    align-items: center;
     background: none;
 }
 
@@ -11,9 +11,11 @@
     justify-content: space-between;
     padding: 1rem;
 }
+
 .card p {
     flex-grow: 1;
 }
+
 .card .takki {
     align-items: center;
 }
@@ -31,20 +33,15 @@
     .card {
         flex: 1;
         padding: 1rem;
-        width: 30%; 
+        width: 30%;
     }
-        .card p {
-            line-height: 2;
-            flex-grow: 1;
-        }
-            .card .takki {
-                flex: 0;
-            }
-<<<<<<< HEAD
+
+    .card p {
+        line-height: 2;
+        flex-grow: 1;
+    }
+
+    .card .takki {
+        flex: 0;
+    }
 }
-
-
-
-=======
-}
->>>>>>> dccccd402ac0840d6ffcf518af4ddc045cae89ef
