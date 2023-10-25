@@ -69,6 +69,11 @@ h1, h2, h3 {
   font-family: var(--font-family-heading);
 }
 
+p {
+  font-family: "Lota", Helvetica, Arial, sans-serif; /* Your desired font stack */
+  font-size: 16px;
+}
+
 /* Navigation Styles */
 .navigation {
   z-index: 2;
@@ -128,6 +133,18 @@ h1, h2, h3 {
   width: 25px;
   height: 25px;
   /* Add any other styles you want, such as color, margin, etc. */
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  display: block;
+}
+
+nav a:hover {
+  color: #ffdd57;
 }
 
 footer {
@@ -417,6 +434,19 @@ body {
   margin-right: 10px;
 }
 
+.hop-up {
+  display: flex;
+  align-items: center;
+}
+
+.hop-up p {
+  background-color: var(--color-lightest-brown);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0;
+  margin-right: 10px;
+}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -464,11 +494,27 @@ nav a {
   text-decoration: none;
   transition: color 0.3s;
   display: block;
-  z-index: -1;
 }
 
 nav a:hover {
   color: #ffdd57;
+}
+
+.modur {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.modur-mynd {
+  flex: 1;
+  max-width: 50%;
+  margin-right: 20px;
+}
+
+.modur-texti {
+  flex: 2;
+  text-align: left;
 }
 
 /*# sourceMappingURL=styles.css.map */
