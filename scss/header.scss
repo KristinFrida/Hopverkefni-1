@@ -14,12 +14,15 @@ header.forsida {
     display: block;
     text-align: center;
     white-space: nowrap; /* Ensures content doesn't wrap to next line */
-    background-image: url('/myndir/Backround\ mynd.jpeg'); /* Path to your image */
-    height: 30rem;
-    background-size: cover; /* Adjust as needed */
-    background-position: center center; /* Adjust as needed */
-    background-repeat: no-repeat;
-    background-position: absolute;
+        background-image: url('/myndir/Backround\ mynd.jpeg'); /* Path to your image */
+        height: 30rem;
+        background-size: cover; 
+        background-position: center center; 
+        background-repeat: no-repeat;
+        background-position: absolute;
+        z-index: 1;
+    
+
 }
 
 header.forsida h1 {
