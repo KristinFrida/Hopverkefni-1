@@ -219,42 +219,6 @@ section {
   flex: 0 1 calc(24% - var(--spacing));
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin: 20px;
-}
-
-.order-details, .order-summary {
-  background-color: var(--color-white);
-  padding: 20px;
-}
-
-label {
-  font-weight: bold;
-}
-
-input[type=text], input[type=email], input[type=tel] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.grid-item {
-  display: flex;
-  flex-direction: column;
-}
-
 /* Box Styles */
 .voruval .boxes {
   display: grid;
@@ -459,7 +423,7 @@ header.forsida {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   display: block;
   text-align: center;
   white-space: nowrap; /* Ensures content doesn't wrap to next line */
@@ -499,6 +463,42 @@ nav a {
 
 nav a:hover {
   color: #ffdd57;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 20px;
+}
+
+.order-details, .order-summary {
+  background-color: var(--color-white);
+  padding: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type=text], input[type=email], input[type=tel] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
 }
 
 .modur {
