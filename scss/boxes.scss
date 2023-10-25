@@ -1,50 +1,59 @@
 .main .cards {
     display: grid;  
-    justify-content: space-between;  
     align-items: center;  
-    background: none;
     gap: 1rem;
-}
-
-.card {
+  }
+  
+  .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
-}
-.card p {
+  }
+  
+  .card p {
     flex-grow: 1;
-}
-.card .takki {
-    align-items: center;
-}
-
-.card img {
+    line-height: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card img {
     height: auto;
     width: 100%;
-}
+  }
 
-@media (min-width: 501px) {
+  .takki {
+    margin-bottom: 1rem;
+  }
+  
+  @media (min-width: 700px) {
     .main .cards {
-        display: flex;
         display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        gap: 1rem;
         margin: 5rem;
     }
-
+  
     .card {
-        flex: 1;
-        padding: 1rem;
-        width: 30%; 
-        display: grid;
-        grid-template-rows: 0, 1fr, 0;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      padding: 1rem;
+      width: 100%;
     }
-        .card p {
-            line-height: 2;
-            flex-grow: 1;
-        }
-            .card .takki {
-                justify-self: start;
-                margin-top: 1rem;
-                flex: 0;
-            }
-}
+  
+    .card p {
+      line-height: 2;
+    }
+  
+    .card .takki {
+      justify-self: start;
+      margin-top: 0;
+    }
+    .card img {
+        grid-row: 1 / span 3; /* Make the image span all three rows */
+        align-self: center; /* Center the image vertically */
+      }
+    
+  }
+  
