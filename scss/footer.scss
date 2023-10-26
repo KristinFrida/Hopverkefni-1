@@ -23,12 +23,14 @@ footer {
     gap: var(--gutter);
     margin: 0 auto;
     text-align: center;
+    
 }
 
 @media (min-width: 500px) {
     .footer .content {
         grid-template-columns: repeat(var(--columns), 1fr);
         max-width: var(--max-width);
+        
     }
 
     .footer section {
@@ -39,6 +41,7 @@ footer {
         grid-column-start: 3;
     }
 }
+
 
 a {
     text-decoration: none;
@@ -59,3 +62,10 @@ section {
     flex: 1;
     padding: var(--spacing);
 }
+@media (max-width: 500px) {
+    .layout-footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
