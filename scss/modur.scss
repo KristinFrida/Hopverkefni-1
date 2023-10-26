@@ -1,16 +1,93 @@
 .modur {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.modur-mynd {
-    flex: 1; 
-    max-width: 50%; 
-    margin-right: 20px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 20px;
 }
 
 .modur-texti {
-    flex: 2; 
-    text-align: left; 
+    flex: 2;
+    text-align: left;
+    margin-right: 5%;
+}
+
+.modur .larett {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.larett {
+    margin-top: 5%;
+}
+
+.modur-mynd, .modur-texti {
+    padding: 10px;
+}
+
+.modur-mynd img {
+    width: 690px;
+    height: 463px;
+    object-fit: cover;
+}
+
+.eiginleikar {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+}
+
+.eiginleikar-section {
+    padding-top: 2rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, auto);
+    gap: 10px;
+}
+@media (max-width: 900px){
+    .modur{
+        grid-template-columns: 1fr;
+        
+    }
+    .eiginleikar {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 5%;
+    }  
+}
+  @media (max-width: 500px){
+    .modur{
+        grid-template-columns: 1fr;
+    }
+    .tveir{
+        flex-direction: column;
+    }
+    .eiginleikar {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+  }
+
+  .modur-yfirlit {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+}
+
+.larett-modur {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top:30%;
+}
+
+.modur-yfirlit {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
 }
