@@ -77,6 +77,8 @@ p {
 /* Navigation Styles */
 .navigation {
   z-index: 2;
+  position: absolute;
+  top: 0;
 }
 
 .navigation ul {
@@ -168,14 +170,15 @@ footer {
 }
 
 .footer .content {
-  display: grid;
-  gap: var(--gutter);
+  display: block;
   margin: 0 auto;
   text-align: center;
 }
 
 @media (min-width: 500px) {
   .footer .content {
+    display: grid;
+    gap: var(--gutter);
     grid-template-columns: repeat(var(--columns), 1fr);
     max-width: var(--max-width);
   }
@@ -185,16 +188,15 @@ footer {
   .footer section:first-child {
     grid-column-start: 3;
   }
+  .layout-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
 }
 a {
   text-decoration: none;
   color: var(--color-white);
-}
-
-.layout-footer {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
 }
 
 .trade p {
@@ -425,11 +427,11 @@ body, html {
 header.forsida {
   color: black;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 0 20px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-  display: block;
   text-align: center;
   white-space: nowrap; /* Ensures content doesn't wrap to next line */
   background-image: url("/myndir/Backround mynd.jpeg"); /* Path to your image */
@@ -442,20 +444,15 @@ header.forsida {
 }
 
 header.forsida h1 {
-  display: block;
-  text-align: center, center;
-  font-size: 5rem;
+  font-size: 17vw;
   font-weight: 700;
-  line-height: 192px;
-  justify-content: space-around;
+  line-height: 1.2;
 }
 
 header.forsida p {
-  text-align: center, center;
-  display: block;
-  font-size: 36px;
+  font-size: 4vw;
   font-weight: 400;
-  line-height: 48px;
+  line-height: 1.2;
 }
 
 nav a {

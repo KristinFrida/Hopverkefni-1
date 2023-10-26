@@ -1,6 +1,8 @@
 /* Navigation Styles */
 .navigation {
     z-index: 2;
+    position: absolute;
+    top: 0;
 }
 .navigation ul {
     list-style: none;
