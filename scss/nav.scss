@@ -1,7 +1,10 @@
 /* Navigation Styles */
+.forsida .navigation {
+    position: absolute;
+}
+
 .navigation {
     z-index: 2;
-    position: absolute;
     top: 0;
 }
 .navigation ul {
