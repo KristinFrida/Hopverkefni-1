@@ -5,7 +5,9 @@ footer {
 
 .footer h2 {
     margin: 0.5rem;
-    border-bottom: var(--border-small) solid var(--color-white);
+    border-bottom: var(--border-small) solid var(--color-lightest-brown);
+    border-bottom-width: var(--border-fill);
+    
 }
 
 .footer p {
@@ -23,12 +25,14 @@ footer {
     gap: var(--gutter);
     margin: 0 auto;
     text-align: center;
+
 }
 
 @media (min-width: 500px) {
     .footer .content {
         grid-template-columns: repeat(var(--columns), 1fr);
         max-width: var(--max-width);
+
     }
 
     .footer section {
@@ -39,6 +43,7 @@ footer {
         grid-column-start: 3;
     }
 }
+
 
 a {
     text-decoration: none;
@@ -54,8 +59,22 @@ a {
 .trade p {
     text-align: center;
 }
+footer p{
+    margin: 10px;
+}
 
 section {
     flex: 1;
     padding: var(--spacing);
 }
+@media (max-width: 500px) {
+    .layout-footer {
+      flex-direction: column;
+      align-items: flex-start;
+    
+
+    }
+    .footer h2{
+        width: 450px;
+    }
+  }

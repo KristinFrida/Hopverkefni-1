@@ -128,9 +128,15 @@ p {
 }
 
 /* Shopping Cart Icon */
-.shopping-cart-icon, .staekkunar-gler {
-  width: 25px;
-  height: 25px;
+.staekkunar-gler {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.shopping-cart-icon {
+  width: 30px;
+  height: 30px;
   margin-left: 5px;
 }
 
@@ -241,7 +247,8 @@ footer {
 
 .footer h2 {
   margin: 0.5rem;
-  border-bottom: var(--border-small) solid var(--color-white);
+  border-bottom: var(--border-small) solid var(--color-lightest-brown);
+  border-bottom-width: var(--border-fill);
 }
 
 .footer p {
@@ -288,11 +295,24 @@ a {
   text-align: center;
 }
 
+footer p {
+  margin: 10px;
+}
+
 section {
   flex: 1;
   padding: var(--spacing);
 }
 
+@media (max-width: 500px) {
+  .layout-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer h2 {
+    width: 250px;
+  }
+}
 /* Styles for "voruval" section */
 .voruval {
   background-color: var(--color-lightest-brown);
