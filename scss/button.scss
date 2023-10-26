@@ -1,0 +1,54 @@
+/* Button Styles */
+.takki, .button {
+    display: inline-block;
+    border-radius: var(--border-radius);
+    padding: 0.5rem 1rem;
+    font-family: var(--font-family-base);
+    text-decoration: none;
+    text-align: center;
+    transition: background-color var(--transition-time-short) var(--transition-timing-function), color var(--transition-time-short) var(--transition-timing-function);
+}
+
+.takki {
+    border: var(--border-small) solid var(--color-dark-brown);
+    color: var(--color-white);
+    background-color: var(--color-medium-brown);
+}
+
+.takki:hover {
+    color: var(--color-medium-brown);
+    background-color: var(--color-white);
+}
+
+.button {
+    border: var(--border-small) solid var(--color-dark-brown);
+    color: var(--color-dark-brown);
+    background-color: var(--color-white);
+}
+
+.button:hover {
+    color: var(--color-white);
+    background-color: var(--color-dark-brown);
+}
+.pop-up{
+    display: flex;
+    align-items: center;
+}
+.pop-up p{
+    background-color: var(--color-lightest-brown);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0;
+    margin-right: 10px;
+}
+.hop-up{
+    display: flex;
+    align-items: center;
+}
+.hop-up p{
+    background-color: var(--color-lightest-brown);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0;
+    margin-right: 10px;
+}

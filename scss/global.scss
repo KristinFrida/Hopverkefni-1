@@ -1,0 +1,16 @@
+/* Global Styles */
+html, input, select, button {
+    font-size: var(--font-base-body-px);
+    font-family: var(--font-family-base);
+}
+
+h1, h2, h3 {
+    margin-bottom: var(--spacing);
+    font-family: var(--font-family-heading);
+}
+p {
+    font-family: "Lota", Helvetica, Arial, sans-serif; /* Your desired font stack */
+    font-size: 16px; 
+   
+  }
+  

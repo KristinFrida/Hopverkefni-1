@@ -1,0 +1,47 @@
+.main .cards {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.card p {
+    flex-grow: 1;
+}
+
+.card .takki {
+    align-items: center;
+}
+
+.card img {
+    height: 100%;
+}
+
+@media (min-width: 501px) {
+    .main .cards {
+        display: flex;
+        margin: 5rem;
+    }
+
+    .card {
+        flex: 1;
+        padding: 1rem;
+        width: 30%;
+    }
+
+    .card p {
+        line-height: 2;
+        flex-grow: 1;
+    }
+
+    .card .takki {
+        flex: 0;
+    }
+}

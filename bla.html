@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Layout</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        .layout-card {
+            background-color: #f8f9fa;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .card-title {
+            margin-bottom: 10px;
+        }
+        .card-img-top {
+            height: 100px;
+            object-fit: cover;
+        }
+        .btn-setja {
+            background-color: #007bff;
+            color: white;
+        }
+        .btn-setja:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="layout-card">
+                    <h5 class="card-title">Tæknilegt móðurborð</h5>
+                    <p class="card-text">Nýtt Takmarkað magn: 189.000 kr</p>
+                    <a href="#" class="btn btn-setja">SETJA Í KÖRFU</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="layout-card">
+                    <h5 class="card-title">Nokkrar af nýjustu vörunum okkar</h5>
+                    <p class="card-text">Vinalegur vinnuróbot</p>
+                    <p class="card-text">Nýtt Ekki fyrir börn: 1.499.990 kr</p>
+                    <a href="#" class="btn btn-setja">SETJA Í KÖRFU</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="layout-card">
+                    <h5 class="card-title">Kæk það eiga stærri stöður!</h5>
+                    <p class="card-text">Langhólf</p>
+                    <p class="card-text">Lágmarksverð: 9.999 kr</p>
+                    <a href="#" class="btn btn-setja">SETJA Í KÖRFU</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<div id="product-list">
+    <!-- Product list will be populated here -->
+  </div>
+
+  <div id="cart">
+    <!-- Cart will be populated here -->
+  </div>
+
+  <script>
+    // Example product data
+    const products = [
+      { id: 1, name: 'Product 1', price: 10.00 },
+      { id: 2, name: 'Product 2', price: 20.00 },
+      { id: 3, name: 'Product 3', price: 30.00 },
+    ];
+
+    // Populate the product list
+    const productList = document.getElementById('product-list');
+    products.forEach(product => {
+      const productDiv = document.createElement('div');
+      productDiv.innerHTML = `
+        <h2>${product.name}</h2>
+        <p>Price: $${product.price}</p>
+        <button onclick="addToCart(${product.id})">Add to Cart</button>
+      `;
+      productList.appendChild(productDiv);
+    });
+
+    // Function to add a product to the cart
+    function addToCart(productId) {
+      const product = products.find(p => p.id === productId);
+      const cartDiv = document.getElementById('cart');
+      cartDiv.innerHTML += `
+        <h2>${product.name}</h2>
+        <p>Price: $${product.price}</p>
+      `;
+    }
+  </script>
+</div>
+</body>
