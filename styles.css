@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reset Styles */
 * {
   margin: 0;
@@ -234,63 +235,63 @@ ul {
   color: black;
 }
 
-footer {
+/* Footer stílar */
+.footer {
   color: var(--color-white);
   background-color: var(--color-dark-brown);
+  padding: var(--spacing);
+  font-size: large;
+  padding-right: 200px; /* Bætti við þessari reglu til að fá textann frá hægri brún */
 }
 
 .footer h2 {
-  margin: 0.5rem;
+  margin: 0.5rem 0;
   border-bottom: var(--border-small) solid var(--color-white);
+  padding-bottom: 0.5rem;
+  width: 150%; /* Þú gætir þurft að endurskoða þetta gildi eftir þörfum */
 }
 
-.footer p {
+.footer p, .footer ul {
   text-align: left;
   list-style: none;
+  margin: 0.5rem 0;
 }
 
 .footer ul {
-  list-style: none;
   padding: 0;
 }
 
-.footer .content {
-  display: grid;
-  gap: var(--gutter);
-  margin: 0 auto;
-  text-align: center;
-}
-
-@media (min-width: 500px) {
-  .footer .content {
-    grid-template-columns: repeat(var(--columns), 1fr);
-    max-width: var(--max-width);
-  }
-  .footer section {
-    grid-column-end: span 4;
-  }
-  .footer section:first-child {
-    grid-column-start: 3;
-  }
-}
-a {
+.footer a {
   text-decoration: none;
   color: var(--color-white);
 }
 
+/* Uppsetning fyrir innihald footersins */
 .layout-footer {
   display: flex;
-  justify-content: space-between;
-  gap: 10px;
+  flex-direction: column;
+  gap: var(--gutter);
+  margin: 0 auto;
 }
 
+/* Media query */
+@media (min-width: 500px) {
+  .layout-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* Vinstrijafna textann þegar skjárinn er í fullri stærð */
+  .footer p, .footer ul, .footer h2 {
+    text-align: left;
+  }
+  /* Stílar fyrir línuna undir seinasta h2 í .layout-footer */
+  .layout-footer > *:last-child h2 {
+    width: 300%; /* Breyttu þessu gildi eftir þörfum */
+  }
+}
+/* Stílar fyrir botnlínu */
 .trade p {
   text-align: center;
-}
-
-section {
-  flex: 1;
-  padding: var(--spacing);
 }
 
 /* Styles for "voruval" section */
