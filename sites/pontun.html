@@ -35,7 +35,7 @@
         <li><a href="vara.html" class="navigation-link">Tilboðsvörur</a></li>
         <li><a href="vorulisti.html" class="navigation-link">Allar vörur</a></li>
         <li class="shopping-cart-container">
-          <a href="pontun.html" class="shopping-cart-button">
+          <a href="pontun.html" class "shopping-cart-button">
             <img src="../myndir/shopping.jpg" alt="Shopping cart" class="shopping-cart-icon">
           </a>
         </li>
@@ -46,45 +46,104 @@
     <h1>Pöntun</h1>
   </header>
   <div class="container">
-    <div class="kaupandi"></div>
-          <h2>Kaupandi</h2>
-          <label for="name">Nafn</label>
-          <input type="text" id="name" required>
-          <label for="email">Netfang</label>
-          <input type="email" id="email" required>
-          <label for="ssn">Kennitala</label>
-          <input type="text" id="ssn" required>
-          <label for="phone">Símanúmer</label>
-          <input type="tel" id="phone" required>
-      </div>
-      <div class="afhending">
-          <h2>Afhending</h2>
-          <label for="address">Heimilisfang</label>
-          <input type="text" id="address" required>
-          <label for="place">Staður</label>
-          <input type="text" id= "place" required>
-          <label for="postcode">Póstnúmer:</label>
-          <input type="text" id="postcode" required>
-          <label for="comments">Athugasemdir</label>
-          <input type="text" id="comments">
+    <div class="order-details">
+      <form>
+        <div class="grid-container">
+          <div class="grid-item">
+            <h2>Kaupandi</h2>
+            <div class="tveir">
+              <div class="input-container">
+                <label for="name">Nafn</label>
+                <input type="text" id="name" required>
+              </div>
+              <div class="input-container">
+                <label for="ssn">Kennitala</label>
+                <input type="text" id="ssn" required>
+              </div>
+            </div>
+            <div class="tveir">
+              <div class="input-container">
+                <label for="email">Netfang</label>
+                <input type="email" id="email" required>
+              </div>
+              <div class="input-container">
+                <label for="phone">Sími</label>
+                <input type="tel" id="phone" required>
+              </div>
+            </div>
+          </div>
+        
+          <div class="grid-item">
+            <h2>Afhending</h2>
+              <div class="tveir">
+                <div class="input-container">
+                  <label for="address">Heimilisfang</label>
+                  <input type="text" id="address" required>
+                </div>
+                <div class="input-container">
+                  <label for="postcode">Póstnúmer:</label>
+                  <input type="text" id="postcode" required>
+                </div>
+              </div>
+              <div class="tveir">
+                <div class="input-container">
+                  <label for="place">Staður</label>
+                  <input type="text" id="place">
+                </div>
+                <div class="input-container">
+                  <label for="comments">Athugasemd</label>
+                  <input type="text" id="comments">
+                </div>
+            </div>
+          </div>
         </div>
+        
+        <button type="submit" class="takki">SENDA PÖNTUN</button>
+      </form>
+    </div>
     <div class="order-summary">
       <div class="samtals-panta">
-        <p>Vinalegur vinnuróbot</p>
-        <p>1.499.990 kr.</p>
+        <div class="larett">
+        <img src="../myndir/velmenni.png" alt="Vélmenni">
+        <div class="texti-verd">
+          <div class="lysing-samtals">
+            <p>Vinalegur vinnuróbot</p>
+          </div>
+          <div class="lysing-verd">
+            <p>1.499.990 kr.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="samtals-panta">
+        <div class="larett">
+        <img src="../myndir/taekni.png" alt="Tæknilegt móðurborð">
+        <div class="texti-verd">
+          <div class="lysing-samtals">
+            <p>Tæknilegt móðurborð</p>
+          </div>
+          <div class="lysing-verd">
+            <p>189.000 kr.</p>
+          </div>
+        </div>
+      </div>
       </div>
       <div class="samtals-panta">
-        <p>Tæknilegt móðurborð</p>
-        <p>189.000 kr.</p>
-      </div>  
-      <div class="samtals-panta">
-        <p><strong>Samtals</strong></p>
-        <p><strong>1.688.990 kr.</strong></p>
+        <div class="larett">
+        <div class="texti-verd">
+          <div class="lysing-samtals">
+            <p><strong>Samtals</strong></p>
+          </div>
+          <div class="lysing-verd">
+            <p><strong>1.688.990 kr.</strong></p>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   </div>
 </body>
-
 <footer class="footer">
   <div class="layout-footer">
     <section>
@@ -93,7 +152,6 @@
       <p>Opið á laugardögum frá 12:00-16:00</p>
       <p>Lokað á sunnudögum</p>
     </section>
-
     <section>
       <h2>HAFÐU SAMBAND</h2>
       <ul>
@@ -101,7 +159,6 @@
         <li><a href="mailto:thjonusta@example.org">Tölvupóstur: thjonusta@example.org</a></li>
       </ul>
     </section>
-
     <section>
       <h2>ANNAÐ</h2>
       <p>Rekja sendingu</p>

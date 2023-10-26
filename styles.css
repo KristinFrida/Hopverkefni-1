@@ -465,20 +465,106 @@ nav a:hover {
   color: #ffdd57;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 20px;
+}
+
+.order-details, .order-summary {
+  padding: 20px;
+}
+
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Split the container into two equal columns */
-  gap: 20px; /* Add some spacing between the columns */
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto, auto);
+  gap: 10px;
 }
 
-.order-details {
-  /* Your styles for the "order-details" element */
+.grid-item {
+  display: flex;
+  flex-direction: column;
 }
 
-.order-summary {
-  /* Your styles for the "order-summary" element */
+.samtals-panta img {
+  width: 90px;
+  height: 84px;
+  margin-right: 25px;
+  object-fit: cover;
 }
 
+.tveir {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.tveir > * {
+  margin-right: 30px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.input-container label {
+  margin-bottom: 5px;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.samtals-panta {
+  margin-bottom: 20px;
+}
+
+.larett {
+  display: flex;
+  align-items: center;
+}
+
+.samtals-panta::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid var(--color-lightest-brown);
+  margin-top: 10px;
+}
+
+.samtals-panta:last-child::after {
+  display: none;
+}
+
+.texti-verd {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (max-width: 980px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .tveir {
+    flex-direction: column;
+  }
+}
 .modur {
   display: flex;
   flex-direction: row;
