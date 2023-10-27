@@ -99,7 +99,6 @@
     "resp-modifier": "^6.0.2",
     "rx": "^4.1.0",
     "safer-buffer": "^2.1.2",
-    "sass": "^1.69.4",
     "send": "^0.16.2",
     "serve-index": "^1.9.1",
     "serve-static": "^1.13.2",
@@ -133,25 +132,24 @@
   "devDependencies": {
     "concurrently": "^8.2.2"
   },
-
-"scripts": {
-  "browser-sync": "browser-sync start --server --files index.html styles.css",
-  "sass": "sass styles.scss styles.css",
-  "sass-watch": "sass --watch *.scss styles.css",
-  "dev": "concurrently npm:sass-watch npm:browser-sync",
-  "lint": "stylelint styles.scss ./**/*.scss",
-  "copy:html": "cpy ./*.html ./build/",
-  "copy:js": "cpy ./*.js ./build/",
-  "build": "concurrently npm:copy:*"
-},
-"repository": {
-  "type": "git",
-  "url": "git+ssh://git@github.com/KristinFrida/Hopverkefni-1.git"
-},
-"author": "",
-"license": "ISC",
-"bugs": {
-  "url": "https://github.com/KristinFrida/Hopverkefni-1/issues"
-},
-"homepage": "https://github.com/KristinFrida/Hopverkefni-1#readme"
+  "scripts": {
+    "browser-sync": "browser-sync start --server --files index.html styles.css",
+    "sass": "sass styles.scss styles.css",
+    "sass-watch": "sass --watch *.scss styles.css",
+    "dev": "concurrently npm:sass-watch npm:browser-sync",
+    "lint": "stylelint styles.scss ./**/*.scss",
+    "copy:html": "cpy ./*.html ./build/",
+    "copy:js": "cpy ./*.js ./build/",
+    "build": "concurrently npm:copy:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/KristinFrida/Hopverkefni-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KristinFrida/Hopverkefni-1/issues"
+  },
+  "homepage": "https://github.com/KristinFrida/Hopverkefni-1#readme"
 }

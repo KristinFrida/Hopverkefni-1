@@ -1,61 +1,80 @@
-/* Footer stílar */
-.footer {
+footer {
     color: var(--color-white);
     background-color: var(--color-dark-brown);
-    padding: var(--spacing);
-    font-size: large;
-    padding-right: 200px; /* Bætti við þessari reglu til að fá textann frá hægri brún */
 }
 
 .footer h2 {
-    margin: 0.5rem 0;
-    border-bottom: var(--border-small) solid var(--color-white);
-    padding-bottom: 0.5rem;
-    width: 150%; /* Þú gætir þurft að endurskoða þetta gildi eftir þörfum */
+    margin: 0.5rem;
+    border-bottom: var(--border-small) solid var(--color-lightest-brown);
+    border-bottom-width: var(--border-fill);
+    
 }
 
-.footer p, .footer ul {
+.footer p {
     text-align: left;
     list-style: none;
-    margin: 0.5rem 0;
 }
 
 .footer ul {
+    list-style: none;
     padding: 0;
 }
 
-.footer a {
+.footer .content {
+    display: grid;
+    gap: var(--gutter);
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+@media (min-width: 500px) {
+    .footer .content {
+        grid-template-columns: repeat(var(--columns), 1fr);
+        max-width: var(--max-width);
+
+    }
+
+    .footer section {
+        grid-column-end: span 4;
+    }
+
+    .footer section:first-child {
+        grid-column-start: 3;
+    }
+}
+
+
+a {
     text-decoration: none;
     color: var(--color-white);
 }
 
-/* Uppsetning fyrir innihald footersins */
 .layout-footer {
     display: flex;
-    flex-direction: column;
-    gap: var(--gutter);
-    margin: 0 auto;
+    justify-content: space-between;
+    gap: 10px;
 }
 
-/* Media query */
-@media (min-width: 500px) {
-    .layout-footer {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    /* Vinstrijafna textann þegar skjárinn er í fullri stærð */
-    .footer p, .footer ul, .footer h2 {
-        text-align: left;
-    }
-
-    /* Stílar fyrir línuna undir seinasta h2 í .layout-footer */
-    .layout-footer > *:last-child h2 {
-        width: 300%; /* Breyttu þessu gildi eftir þörfum */
-    }
-}
-
-/* Stílar fyrir botnlínu */
 .trade p {
     text-align: center;
 }
+footer p{
+    margin: 10px;
+}
+
+section {
+    flex: 1;
+    padding: var(--spacing);
+}
+@media (max-width: 500px) {
+    .layout-footer {
+      flex-direction: column;
+      align-items: flex-start;
+    
+
+    }
+    .footer h2{
+        width: 450px;
+    }
+  }
