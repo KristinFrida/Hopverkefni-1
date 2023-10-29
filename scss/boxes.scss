@@ -40,16 +40,24 @@
         line-height: 2;
         flex-grow: 1;
     }
-
-    .card .takki {
-        flex: 0;
-    }
+}
+.card .takki {
+    margin-top: 5%;
+    flex: inline;
+    width: 45%;
 }
 .forsida-titill-h2{
   margin-left: 15%;  
 }
-@media (max-width: 500px) {
+@media (max-width: 501px) {
     .forsida-titill-h2{
         margin-left: 2%;
+    }
+    .card .takki {
+        margin-top: 5%;
+        flex: center;
+        align-items: center;
+        width: 45%;
+        margin-left: 20%;
     }
 }
