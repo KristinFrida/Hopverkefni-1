@@ -2,9 +2,15 @@
 .voruval {
     background-color: var(--color-lightest-brown);
 }
-
+.voruval .title{
+    font-size: 1.25em;
+}
 .voruval img {
     overflow: hidden;
+}
+.voruval p{
+    padding: 0%;
+    margin: 0;
 }
 
 .voruval .box {
