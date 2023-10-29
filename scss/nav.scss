@@ -7,6 +7,7 @@
 .navigation {
     z-index: 5;
     top: 0;
+    max-width: var(--max-width);
 }
 .navigation ul {
     list-style: none;

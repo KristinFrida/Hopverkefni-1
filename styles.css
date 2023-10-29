@@ -83,6 +83,7 @@ p {
 .navigation {
   z-index: 5;
   top: 0;
+  max-width: var(--max-width) !important;
 }
 
 .navigation ul {
@@ -310,7 +311,7 @@ section {
     align-items: flex-start;
   }
   .footer h2 {
-    width: 250px;
+    width: 450px;
   }
 }
 /* Styles for "voruval" section */
@@ -405,9 +406,13 @@ img {
     background: linear-gradient(to top left, var(--color-dark-brown) 50%, var(--color-lightest-brown) 50%);
   }
 }
-html {
-  max-width: 1440px;
-  margin: 0 auto;
+html, h1, header .forsida, nav, .navigation {
+  max-width: var(--max-width);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .main .cards {
@@ -543,6 +548,7 @@ header.forsida h1 {
   font-size: 15vw;
   font-weight: 700;
   line-height: 1.2;
+  max-width: var(--max-width) !important;
 }
 
 header.forsida p {
