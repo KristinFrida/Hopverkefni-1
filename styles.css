@@ -85,6 +85,7 @@ img {
 }
 
 h1 {
+  padding-top: 5%;
   font-size: 3em;
 }
 
@@ -577,7 +578,7 @@ img {
 .hop-up p {
   background-color: var(--color-lightest-brown);
   border-radius: 5px;
-  padding: 5px;
+  padding: 3px;
   margin: 0;
   margin-right: 10px;
   margin-bottom: 1%;
@@ -593,6 +594,11 @@ p {
   font-size: 1.25em;
 }
 
+@media (max-width: 501px) {
+  .hop-up p {
+    font-size: 1em;
+  }
+}
 body, html {
   margin: 0;
   padding: 0;

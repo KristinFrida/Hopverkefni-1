@@ -6,3 +6,8 @@ p {
 .hop-up p{
     font-size: 1.25em;
 }
+@media (max-width: 501px) {
+  .hop-up p{
+    font-size: 1em;
+  }
+}
