@@ -45,3 +45,11 @@
         flex: 0;
     }
 }
+.forsida-titill-h2{
+  margin-left: 15%;  
+}
+@media (max-width: 500px) {
+    .forsida-titill-h2{
+        margin-left: 2%;
+    }
+}

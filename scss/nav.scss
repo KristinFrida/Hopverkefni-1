@@ -25,6 +25,7 @@
 .title {
     color: var(--color-dark-brown);
     font-weight: bold;
+    font-size: 2rem;
 }
 
 /* Search Bar and Button Styles */
@@ -83,6 +84,9 @@ nav a:hover {
 @media(max-width: 700px) {
     .navigation-link, .search-bar2, .search-bar-container2, .search-input2 {
         display:none;
+    }
+    .title{
+        font-size: 1.25rem;
     }
 }
 

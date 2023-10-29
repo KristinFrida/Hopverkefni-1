@@ -14,7 +14,8 @@ header.forsida {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); //ath white cast
     text-align: center;
     white-space: nowrap; 
-    background-image: url('/myndir/Backround\ mynd.jpeg'); /* Path to your image */
+    background-blend-mode: lighten;
+    background-image: linear-gradient(rgb(100, 100, 100), rgb(100, 100, 100)), url('/myndir/Backround\ mynd.jpeg'); /* Path to your image */
     height: 30rem;
     background-size: cover;
     background-position: center center; 
